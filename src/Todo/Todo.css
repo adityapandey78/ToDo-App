@@ -1,10 +1,16 @@
-body {
+/* section {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+} */
+body{
   width: 100%;
   height: 100vh;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
-
 .todo-container {
   align-items: center;
   display: flex;
@@ -12,8 +18,6 @@ body {
   min-height: 100vh;
   padding-top: 3%;
   background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Anime-Landscape-Backgrounds.jpg);
-  background-size: cover;
-  background-position: center;
   color: white;
   transition: 0.3s linear;
   overflow: hidden;
@@ -22,7 +26,7 @@ body {
 .header,
 .form,
 .datetime {
-  margin: 0;
+  margin: 0 ;
   min-height: 10vh;
   width: 100%;
 }
@@ -34,6 +38,7 @@ body {
   justify-content: space-around;
   font-size: 3rem;
   min-height: 25vh;
+  width: 100%;
 }
 
 section h1 {
@@ -45,6 +50,7 @@ section h1 {
 .date-time {
   font-size: 1.5rem;
   text-align: center;
+  
 }
 
 form {
@@ -62,6 +68,7 @@ form input {
   letter-spacing: 0.1rem;
   border: none;
   outline: none;
+  /* border-radius: 15; */
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
   max-width: 500px;
@@ -111,38 +118,44 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 1200px;
 }
 
 .todo-list {
-  width: 100%;
-  max-width: 1200px;
+  min-width: 22%;
+
+  /* To remove the bullets of unordered list */
   list-style: circle;
-  padding: 0;
-  margin: 0;
 }
 
 .todo-item {
-  margin: 1rem auto;
+  margin: 1rem;
+  /*word-wrap: break-word;
+    */ /*flex-wrap: wrap;
+    */
   font-size: 20px;
+  color: transparent;
   border-radius: 20px;
   transition: background-color 200ms ease-in-out;
   background-color: #f2f3f4;
-  width: 90%;
+  min-width: 20rem;
   max-width: 40rem;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem ;
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 0.5rem;
+  grid-template-columns: 2fr 0.1fr 0.1fr;
+  justify-content: start;
   align-items: center;
+  gap: 0;
+  /*align-items: center;
+    */ /*wrapsthelinks*/
+  overflow-wrap: anywhere;
 }
-
-.todo-item > button {
+.todo-item>button{
   background-color: transparent;
-  border: none;
+  
 }
-
 li span {
+  max-width: 20rem;
   color: #1c2833;
 }
 
@@ -150,13 +163,12 @@ li span {
 .delete-btn {
   font-size: 2rem;
   cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 80%;
+  margin: 0 5px;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .check-btn {
@@ -182,58 +194,12 @@ li span {
   font-size: 1.6rem;
   padding: 1rem 2.2rem;
   border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
 }
 
 .clear-btn:hover {
   background-color: #8d1407;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-  .header {
-    font-size: 1.5rem;
-    min-height: 20vh;
-  }
-
-  section h1 {
-    font-size: 2rem;
-  }
-
-  .date-time {
-    font-size: 1rem;
-  }
-
-  form {
-    flex-direction: column;
-    font-size: 1.2rem;
-    padding: 0.4rem;
-  }
-
-  form input {
-    font-size: 1.2rem;
-    padding: 5px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-
-  form button {
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-  }
-
-  .todo-item {
-    font-size: 1.2rem;
-    padding: 0.5rem 0.8rem;
-    grid-template-columns: 1fr auto auto;
-    min-width: 100%;
-  }
-
-  .check-btn,
-  .delete-btn {
-    font-size: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
 }
