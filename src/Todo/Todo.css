@@ -111,38 +111,38 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  width: 100%;
 }
 
 .todo-list {
-  min-width: 22%;
+  width: 100%;
+  max-width: 1200px;
   list-style: circle;
+  padding: 0;
+  margin: 0;
 }
 
 .todo-item {
-  margin: 1rem;
+  margin: 1rem auto;
   font-size: 20px;
-  color: transparent;
   border-radius: 20px;
   transition: background-color 200ms ease-in-out;
   background-color: #f2f3f4;
-  min-width: 20rem;
+  width: 90%;
   max-width: 40rem;
-  padding: 0.1rem 1rem;
+  padding: 0.5rem 1rem;
   display: grid;
-  grid-template-columns: 2fr 0.1fr 0.1fr;
-  justify-content: start;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.5rem;
   align-items: center;
-  gap: 0;
-  overflow-wrap: anywhere;
 }
 
 .todo-item > button {
   background-color: transparent;
+  border: none;
 }
 
 li span {
-  max-width: 20rem;
   color: #1c2833;
 }
 
@@ -150,11 +150,13 @@ li span {
 .delete-btn {
   font-size: 2rem;
   cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 80%;
-  margin: 0 5px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .check-btn {
@@ -224,14 +226,14 @@ li span {
   .todo-item {
     font-size: 1.2rem;
     padding: 0.5rem 0.8rem;
-    grid-template-columns: 1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr auto auto;
     min-width: 100%;
   }
 
   .check-btn,
   .delete-btn {
     font-size: 1.5rem;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
