@@ -12,6 +12,8 @@ body {
   min-height: 100vh;
   padding-top: 3%;
   background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Anime-Landscape-Backgrounds.jpg);
+  background-size: cover;
+  background-position: center;
   color: white;
   transition: 0.3s linear;
   overflow: hidden;
@@ -184,9 +186,11 @@ li span {
   background-color: #8d1407;
 }
 
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .header {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    min-height: 20vh;
   }
 
   section h1 {
@@ -198,19 +202,36 @@ li span {
   }
 
   form {
+    flex-direction: column;
     font-size: 1.2rem;
+    padding: 0.4rem;
   }
 
   form input {
     font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   form button {
     font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
   }
 
   .todo-item {
     font-size: 1.2rem;
     padding: 0.5rem 0.8rem;
+    grid-template-columns: 1fr 0.1fr 0.1fr;
+    min-width: 100%;
+  }
+
+  .check-btn,
+  .delete-btn {
+    font-size: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
