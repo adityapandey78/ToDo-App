@@ -1,8 +1,20 @@
-# React + Vite
+# To Do Application 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Made this app with react while learning it.
+- Aim was to get a good grasp on the following:  
+        - reusable react components  
+        - better idea of useState and useEffect Hooks  
+        - connect the parent and child component and passing the  parameters and arguments eshtabilising good connection  
+        - Using the Time and data object properly that updates time every sec  
+        - storing the entered data in local storage of browser which appears even after refreshing the page 
 
-Currently, two official plugins are available:
+ 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+        It was sort of overwhelming for beginner like me  but it  was fun creating this project ❤️
+
+### Special Thanks to 🙌:
+- [Chai Aur Code-React]( https://youtu.be/FxgM9k1rg0Q?si=v-jv_GvMPbifpGWS)
+- [Technical Thapa](https://www.youtube.com/@ThapaTechnical)    
+
+for their awesome youtube playlist of react!💕
+
