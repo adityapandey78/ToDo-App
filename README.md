@@ -6,7 +6,8 @@
         - better idea of useState and useEffect Hooks  
         - connect the parent and child component and passing the  parameters and arguments eshtabilising good connection  
         - Using the Time and data object properly that updates time every sec  
-        - storing the entered data in local storage of browser which appears even after refreshing the page 
+        - storing the entered data in local storage of browser which appears even after refreshing the page  
+        - made it resposive.
 
  
 
